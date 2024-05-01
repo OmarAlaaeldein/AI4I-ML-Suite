@@ -27,7 +27,7 @@ The notebook employs a diverse set of machine learning classifiers to analyze th
 
 To evaluate the performance of the trained machine learning models, a combination of evaluation metrics is used. In addition to common metrics such as accuracy, precision, recall, and F1-score, the Jaccard similarity coefficient is incorporated as a measure of similarity between the predicted and true labels.
 
-The micro-average of the Jaccard similarity and the micro-average of the F1-score are computed across all classes. These two metrics are then multiplied to create a composite metric that combines their strengths, providing a more comprehensive assessment of the models' performance.
+The micro-average of the Jaccard similarity and the micro-average of the F1-score are computed across all classes since this problem is multi-label. These two metrics are then multiplied to create a composite metric that combines their strengths, providing a more comprehensive assessment of the models' performance.
 
 ## Results
 
