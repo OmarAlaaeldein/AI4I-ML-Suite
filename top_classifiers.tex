@@ -1,0 +1,16 @@
+\begin{tabular}{llrrrrrrr}
+\toprule
+classifier & hyperparameters & f1 & hamming_loss & auc & precision & accuracy & recall & score \\
+\midrule
+CatBoostClassifier & {'depth': 5, 'learning_rate': 0.5, 'n_estimators': 200, 'l2_leaf_reg': 0.1, 'task_type': 'GPU', 'verbose': False} & 0.983326 & 0.994833 & 0.862990 & 0.982833 & 0.984000 & 0.984040 & 0.948511 \\
+DecisionTreeClassifier & {'max_depth': 7, 'min_samples_split': 10, 'min_samples_leaf': 1} & 0.983924 & 0.995167 & 0.855924 & 0.981952 & 0.984500 & 0.986035 & 0.946763 \\
+GradientBoostingClassifier & {'n_estimators': 50, 'learning_rate': 0.1, 'max_depth': 7, 'subsample': 1.0} & 0.984478 & 0.994667 & 0.879361 & 0.984509 & 0.982500 & 0.984539 & 0.953566 \\
+KNeighborsClassifier & {'n_neighbors': 3, 'weights': 'distance'} & 0.969941 & 0.991750 & 0.680862 & 0.967994 & 0.975000 & 0.974564 & 0.886410 \\
+LGBMClassifier & {'max_depth': 3, 'learning_rate': 0.1, 'n_estimators': 200, 'num_leaves': 31, 'subsample': 0.5, 'colsample_bytree': 0.8, 'reg_lambda': 0.0, 'device': 'gpu', 'gpu_device_id': 0, 'verbose': -1, 'silent': True} & 0.987147 & 0.996333 & 0.881369 & 0.985918 & 0.988500 & 0.988529 & 0.956603 \\
+LogisticRegression & {'C': 10.0} & 0.980830 & 0.994667 & 0.774550 & 0.979029 & 0.984000 & 0.984539 & 0.920964 \\
+MLPClassifier & {'hidden_layer_sizes': [200, 200], 'activation': 'tanh', 'solver': 'adam', 'alpha': 0.01, 'learning_rate': 'constant'} & 0.985545 & 0.995917 & 0.873046 & 0.984339 & 0.987500 & 0.988030 & 0.953223 \\
+RandomForestClassifier & {'n_estimators': 50, 'max_depth': 7, 'min_samples_split': 5, 'min_samples_leaf': 1} & 0.976926 & 0.994083 & 0.724935 & 0.976136 & 0.981500 & 0.982045 & 0.903959 \\
+SVC & {'kernel': 'rbf', 'C': 10.0, 'gamma': 'scale'} & 0.982254 & 0.995250 & 0.807306 & 0.979475 & 0.985000 & 0.985536 & 0.931619 \\
+XGBClassifier & {'max_depth': 5, 'learning_rate': 0.5, 'n_estimators': 50, 'gamma': 0.5, 'subsample': 1.0, 'colsample_bytree': 1.0, 'tree_method': 'gpu_hist', 'gpu_id': 0} & 0.987850 & 0.996500 & 0.881868 & 0.986452 & 0.988500 & 0.989526 & 0.957050 \\
+\bottomrule
+\end{tabular}
