@@ -1,0 +1,17 @@
+[
+    {
+        "classifier": "XGBClassifier",
+        "hyperparameters": {
+            "max_depth": 3,
+            "tree_method": "gpu_hist",
+            "gpu_id": 0
+        },
+        "f1": 0.9874782335859856,
+        "hamming_loss": 0.9964166666666666,
+        "auc": 0.8657440102529621,
+        "precision": 0.9862335963370262,
+        "accuracy": 0.9885,
+        "recall": 0.9895261845386534,
+        "score": 0.9520561631769495
+    }
+]
